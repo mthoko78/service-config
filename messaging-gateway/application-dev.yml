@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78
+    username: mhlangamthoko_SQLLogin_1
+    password: l15j9v8w5u
+    hikari:
+      minimum-idle: 25
+      maximum-pool-size: 25
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: dbo
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username: mthoko78@outlook.com
+    password: Smj@dbn1
+    debug: true
+    transport:
+      protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+logging:
+  level:
+    org:
+      springframework: INFO
+server:
+  port: ${PORT:5000}
+EPIZY: http://mthokozisi.epizy.com/service/monitor.php
+ftp:
+  host: ftpupload.net
+  port: 21
+  username: epiz_24456977
+  password: Qfniw5vLxB7
+  baseDir: /htdocs/
+  base_directory: /htdocs/uploads/general/
+  calls_directory: /htdocs/uploads/calls/
+  service_directory: /htdocs/uploads/service/
+  base_url: EPIZY
+sms:
+  verificationPhrase: <#> Your verification code is
+clickatel:
+  sms:
+    apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
+    url: https://platform.clickatell.com/messages/http/send
+learners:
+  api:
+    url: https://learners-drivers-api.herokuapp.com/
+  #spring:
+  #  datasource:
+  #    url: jdbc:h2:file:./src/test/resources/database;DB_CLOSE_ON_EXIT=FALSE
+  #    driverClassName: org.h2.Driver
+  #    username: sa
+  #    password: password
+  #    hikari:
+  #      connection-timeout: 300000
+  #      maximum-pool-size: 10
+  #  jpa:
+  #    show-sql: true
+  #    hibernate:
+  #      ddl-auto: update
+  #    database-platform: org.hibernate.dialect.H2Dialect
