@@ -9,8 +9,6 @@ spring:
       maximum-pool-size: 25
   thymeleaf:
     mode: HTML
-datasource:
-  servertimezone: UTC
 cors:
   allowed:
     origins: http://localhost:3000,https://printing-services.herokuapp.com,https://mthoko.herokuapp.com
@@ -22,7 +20,6 @@ logging:
       springframework: INFO
 server:
   port: ${PORT:8080}
-EPIZY: http://mthokozisi.epizy.com/service/monitor.php
 ftp:
   host: ftpupload.net
   port: 21
@@ -31,9 +28,6 @@ ftp:
   base_directory: /htdocs/uploads/general/
   calls_directory: /htdocs/uploads/calls/
   documents: /htdocs/documents/mthoko/
-  base_url: EPIZY
-app:
-  recording_directory: /htdocs/uploads/service/
 geo:
   api:
     url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
