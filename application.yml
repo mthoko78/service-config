@@ -16,52 +16,7 @@ spring:
       hibernate:
         default_schema: dbo
         dialect: org.hibernate.dialect.SQLServer2012Dialect
-
-  thymeleaf:
-    mode: HTML
-datasource:
-  servertimezone: UTC
-cors:
-  allowed:
-    origins: http://localhost:3000,https://printing-services.herokuapp.com,https://mthoko.herokuapp.com
-    methods: '*'
-    headers: '*'
 logging:
   level:
     org:
       springframework: INFO
-server:
-  port: ${PORT:8080}
-EPIZY: http://mthokozisi.epizy.com/service/monitor.php
-ftp:
-  host: ftpupload.net
-  port: 21
-  username: epiz_24456977
-  password: Qfniw5vLxB7
-  base_directory: /htdocs/uploads/general/
-  calls_directory: /htdocs/uploads/calls/
-  service_directory: /htdocs/uploads/service/
-  base_url: EPIZY
-app:
-  recording_directory: /htdocs/uploads/service/
-geo:
-  api:
-    url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
-    key: YVT9TNokVXCI5A7TaC88zcTYEzwLVz5A
-    includeRoadMetadata: true
-    includeNearestIntersection: true
-sms:
-  apiKey: 4f5b7d6e
-  apiSecret: UWeZlAcFoJYNE5FJ
-  defaultRecipient: 27684243087
-  verificationPhrase: <#> Your verification code is
-  gateway:
-    url: http://localhost:5000
-clickatel:
-  sms:
-    apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
-    defaultRecipient: 27684243087
-    url: https://platform.clickatell.com/messages/http/send
-learners:
-  api:
-    url: https://learners-drivers-api.herokuapp.com/
