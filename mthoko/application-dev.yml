@@ -8,17 +8,21 @@ cors:
     origins: http://localhost:3000,https://printing-services.herokuapp.com,https://mthoko.herokuapp.com
     methods: '*'
     headers: '*'
+logging:
+  level:
+    org:
+      springframework: INFO
 server:
   port: ${PORT:8080}
 EPIZY: http://mthokozisi.epizy.com/service/monitor.php
 ftp:
   host: ftpupload.net
   port: 21
-  username: epiz_24456977
-  password: Qfniw5vLxB7
+  username: if0_36869792
+  password: Mthoko78
   base_directory: /htdocs/uploads/general/
   calls_directory: /htdocs/uploads/calls/
-  service_directory: /htdocs/uploads/service/
+  documents: /htdocs/documents/mthoko/
   base_url: EPIZY
 app:
   recording_directory: /htdocs/uploads/service/
@@ -34,7 +38,7 @@ sms:
   defaultRecipient: 27684243087
   verificationPhrase: <#> Your verification code is
   gateway:
-    url: http://localhost:5000
+    url: https://all-apps-gateway.herokuapp.com
 clickatel:
   sms:
     apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
@@ -43,4 +47,3 @@ clickatel:
 learners:
   api:
     url: https://learners-drivers-api.herokuapp.com/
-env: dev
