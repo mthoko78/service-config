@@ -1,0 +1,57 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78;encrypt=true;trustServerCertificate=true
+    username: mhlangamthoko_SQLLogin_1
+    password: l15j9v8w5u
+    hikari:
+      minimum-idle: 25
+      maximum-pool-size: 25
+  thymeleaf:
+    mode: HTML
+datasource:
+  servertimezone: UTC
+cors:
+  allowed:
+    origins: http://localhost:3000,https://printing-services.herokuapp.com,https://mthoko.herokuapp.com
+    methods: '*'
+    headers: '*'
+logging:
+  level:
+    org:
+      springframework: INFO
+server:
+  port: ${PORT:8080}
+EPIZY: http://mthokozisi.epizy.com/service/monitor.php
+ftp:
+  host: ftpupload.net
+  port: 21
+  username: if0_36869792
+  password: Mthoko78
+  base_directory: /htdocs/uploads/general/
+  calls_directory: /htdocs/uploads/calls/
+  documents: /htdocs/documents/mthoko/
+  base_url: EPIZY
+app:
+  recording_directory: /htdocs/uploads/service/
+geo:
+  api:
+    url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
+    key: YVT9TNokVXCI5A7TaC88zcTYEzwLVz5A
+    includeRoadMetadata: true
+    includeNearestIntersection: true
+sms:
+  apiKey: 4f5b7d6e
+  apiSecret: UWeZlAcFoJYNE5FJ
+  defaultRecipient: 27684243087
+  verificationPhrase: <#> Your verification code is
+  gateway:
+    url: https://all-apps-gateway.herokuapp.com
+clickatel:
+  sms:
+    apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
+    defaultRecipient: 27684243087
+    url: https://platform.clickatell.com/messages/http/send
+learners:
+  api:
+    url: https://learners-drivers-api.herokuapp.com/
