@@ -3,7 +3,6 @@ spring:
     url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78
     username: mhlangamthoko_SQLLogin_1
     password: l15j9v8w5u
-
   jpa:
     show-sql: false
   mail:
@@ -41,17 +40,3 @@ clickatel:
 learners:
   api:
     url: https://learners-drivers-api.herokuapp.com/
-  #spring:
-  #  datasource:
-  #    url: jdbc:h2:file:./src/test/resources/database;DB_CLOSE_ON_EXIT=FALSE
-  #    driverClassName: org.h2.Driver
-  #    username: sa
-  #    password: password
-  #    hikari:
-  #      connection-timeout: 300000
-  #      maximum-pool-size: 10
-  #  jpa:
-  #    show-sql: true
-  #    hibernate:
-  #      ddl-auto: update
-  #    database-platform: org.hibernate.dialect.H2Dialect
