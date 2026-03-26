@@ -25,10 +25,6 @@ spring:
     template:
       routing-key: ${RABBIT_ROUTING_KEY:chess_game}
     virtual-host: ${RABBIT_VIRTUAL_HOST:ilgcrswn}
-logging:
-  level:
-    org:
-      springframework: INFO
 server:
   session:
     cookie:
@@ -39,7 +35,7 @@ server:
       cookie:
         http-only: false
         secure: false
-  port: ${PORT:8081}
+  PORT: 8081
 
 gcp:
   firebase:

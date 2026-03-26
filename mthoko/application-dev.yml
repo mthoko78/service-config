@@ -8,12 +8,7 @@ cors:
     origins: http://localhost:3000,https://printing-services.herokuapp.com,https://mthoko.herokuapp.com
     methods: '*'
     headers: '*'
-logging:
-  level:
-    org:
-      springframework: INFO
-server:
-  port: ${PORT:8080}
+PORT: 8080
 ftp:
   host: ftpupload.net
   port: 21
