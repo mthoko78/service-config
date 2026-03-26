@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    hikari:
+      connection-timeout: 300000
+      maximum-pool-size: 10
+  jpa:
+    properties:
+      hibernate:
+        default_schema: dbo
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  thymeleaf:
+    mode: HTML
+
+  rabbitmq:
+    host: ${RABBIT_HOST:rat-01.rmq2.cloudamqp.com}
+#    port: 5672
+    username: ${RABBIT_USERNAME:ilgcrswn}
+    password: ${RABBIT_PASSWORD:38e4dJGc_92brDNOLtYv0lZ_asDiqpY4}
+    template:
+      routing-key: ${RABBIT_ROUTING_KEY:chess_game}
+    virtual-host: ${RABBIT_VIRTUAL_HOST:ilgcrswn}
+logging:
+  level:
+    org:
+      springframework: INFO
+server:
+  session:
+    cookie:
+      max-age: 10
+  servlet:
+    session:
+      timeout: 10s
+      cookie:
+        http-only: false
+        secure: false
+  port: ${PORT:8081}
+
+gcp:
+  firebase:
+    service-account: 'classpath:firebase-service-account.json'
+    host: https://device-monitor-1579861656148.firebaseio.com
+
+environment: remote

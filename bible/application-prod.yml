@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:file:./src/main/resources/bible;MODE=MSSQLServer;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=0
+    password:
+  jpa:
+    show-sql: false
+    hibernate:
+    properties:
+      hibernate:
+        default_schema: PUBLIC
+        dialect: org.hibernate.dialect.H2Dialect
+#gcp:
+#  firebase:
+#    host: http://192.168.1.163:9001
