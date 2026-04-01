@@ -1,7 +1,8 @@
 spring:
   datasource:
     url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=tempDb
-    password: guest_password
+    password: s?u!ERe3i4ok=58drAsw
+
 gcp:
   firebase:
     host: http://localhost:9000

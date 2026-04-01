@@ -1,21 +1,9 @@
 spring:
   datasource:
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78;encrypt=true;trustServerCertificate=true
     username: mhlangamthoko_SQLLogin_1
     password: l15j9v8w5u
-    hikari:
-      minimum-idle: 25
-      maximum-pool-size: 25
 
-  jpa:
-    show-sql: false
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        default_schema: dbo
-        dialect: org.hibernate.dialect.SQLServer2012Dialect
   mail:
     host: smtp-mail.outlook.com
     port: 587
@@ -30,8 +18,10 @@ spring:
           auth: true
           starttls:
             enable: true
+
 PORT: 5000
 EPIZY: http://mthokozisi.epizy.com/service/monitor.php
+
 ftp:
   host: ftpupload.net
   port: 21
@@ -42,12 +32,10 @@ ftp:
   calls_directory: /htdocs/uploads/calls/
   service_directory: /htdocs/uploads/service/
   base_url: EPIZY
+
 sms:
   verificationPhrase: <#> Your verification code is
-clickatel:
-  sms:
-    apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
-    url: https://platform.clickatell.com/messages/http/send
+
 learners:
   api:
     url: https://learners-drivers-api.herokuapp.com/
