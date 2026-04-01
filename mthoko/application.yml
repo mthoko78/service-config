@@ -1,0 +1,35 @@
+PORT: 8080
+
+cors:
+  allowed:
+    origins: http://localhost:3000,https://mthoko.herokuapp.com
+    methods: '*'
+    headers: '*'
+
+ftp:
+  host: ftpupload.net
+  port: 21
+  username: if0_36869792
+  password: Mthoko78
+  base_directory: /htdocs/uploads/general/
+  calls_directory: /htdocs/uploads/calls/
+  documents: /htdocs/documents/mthoko/
+
+geo:
+  api:
+    jdbc-url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
+    key: YVT9TNokVXCI5A7TaC88zcTYEzwLVz5A
+    includeRoadMetadata: true
+    includeNearestIntersection: true
+
+sms:
+  apiKey: 4f5b7d6e
+  apiSecret: UWeZlAcFoJYNE5FJ
+  defaultRecipient: 27684243087
+  verificationPhrase: <#> Your verification code is
+  gateway:
+    jdbc-url: https://all-apps-gateway.herokuapp.com
+
+learners:
+  api:
+    jdbc-url: https://learners-drivers-api.herokuapp.com/

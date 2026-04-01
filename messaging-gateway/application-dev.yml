@@ -1,10 +1,8 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78
+    jdbc-url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78
     username: mhlangamthoko_SQLLogin_1
     password: l15j9v8w5u
-  jpa:
-    show-sql: false
   mail:
     host: smtp-mail.outlook.com
     port: 587
@@ -19,8 +17,10 @@ spring:
           auth: true
           starttls:
             enable: true
+
 PORT: 5000
 EPIZY: http://mthokozisi.epizy.com/service/monitor.php
+
 ftp:
   host: ftpupload.net
   port: 21
@@ -30,13 +30,11 @@ ftp:
   base_directory: /htdocs/uploads/general/
   calls_directory: /htdocs/uploads/calls/
   service_directory: /htdocs/uploads/service/
-  base_url: EPIZY
+  base_jdbc-url: EPIZY
+
 sms:
   verificationPhrase: <#> Your verification code is
-clickatel:
-  sms:
-    apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
-    url: https://platform.clickatell.com/messages/http/send
+
 learners:
   api:
-    url: https://learners-drivers-api.herokuapp.com/
+    jdbc-url: https://learners-drivers-api.herokuapp.com/
