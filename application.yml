@@ -5,6 +5,7 @@ spring:
   datasource:
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
     jdbc-url: ${JDBC_URL:jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb}
+    url: ${JDBC_URL:jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb}
     username: ${DATABASE_USERNAME:sa}
     password: ${DATABASE_PASSWORD:s?u!ERe3i4ok=58drAsw}
     hikari:
@@ -19,15 +20,23 @@ spring:
       hibernate:
         default_schema: dbo
         dialect: org.hibernate.dialect.SQLServerDialect
+  boot:
+    admin:
+      client:
+        username: ${SPRING_BOOT_ADMIN_USERNAME:admin}
+        password: ${SPRING_BOOT_ADMIN_PASSWORD:password}
+        url: ${SPRING_BOOT_ADMIN_URL:http://localhost:8084}
+        instance:
+          service-base-url: ${SERVICE_BASE_URL}
 
 management:
   endpoint:
     env:
-      show-values: ALWAYS
+      show-values: always
   endpoints:
     web:
       exposure:
-        include: refresh,health,info,env
+        include: '*'
 
 logging:
   level:
@@ -42,7 +51,11 @@ clickatel:
   sms:
     apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
     defaultRecipient: 27684243087
-    jdbc-url: https://platform.clickatell.com/messages/http/send
+    url: https://platform.clickatell.com/messages/http/send
 
 firebase:
   accessToken: AIzaSyD9lDylJbFAjDtW0AaeGcK8Jpc2S44HY4Y
+
+ftp:
+  baseDir: /upload/
+  documents: documents
