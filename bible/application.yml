@@ -24,6 +24,7 @@ server:
         secure: false
 
 PORT: 8081
+SERVICE_BASE_URL: http://localhost:${PORT}/
 
 gcp:
   firebase:
