@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78;encrypt=true;trustServerCertificate=true
+    username: mhlangamthoko_SQLLogin_1
+    password: l15j9v8w5u
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: mthoko78@outlook.com
+    password: zugnzpsfjzvenjbj
+    debug: true
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+
+PORT: 5000
+
+ftp:
+  host: ftpupload.net
+  port: 21
+  username: if0_41617208
+  password: Zfb9wtEczk
+  baseDir: /htdocs/
+  base_directory: ${ftp.baseDir}
+  calls_directory: ${ftp.baseDir}
+  service_directory: ${ftp.baseDir}
+
+sms:
+  verificationPhrase: <#> Your verification code is
+
+learners:
+  api:
+    url: https://learners-drivers-api.herokuapp.com/

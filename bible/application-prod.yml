@@ -1,13 +1,12 @@
 spring:
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:file:./src/main/resources/bible;MODE=MSSQLServer;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=0
-    password:
   jpa:
     properties:
       hibernate:
         default_schema: PUBLIC
         dialect: org.hibernate.dialect.H2Dialect
 
-JDBC_URL: jdbc:sqlserver://0.tcp.in.ngrok.io:18076;encrypt=true;trustServerCertificate=true;database=tempdb
-FIREBASE_HOST: https://f3db-41-25-43-76.ngrok-free.app
+JDBC_URL: jdbc:h2:file:./src/main/resources/bible;MODE=MSSQLServer;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=0
+DATABASE_PASSWORD: 
+FIREBASE_HOST: https://b8fa-105-246-242-131.ngrok-free.app

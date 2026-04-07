@@ -42,7 +42,7 @@ clickatel:
   sms:
     apiKey: 3D_dkMvfQ1SA-4a0NE13oQ==
     defaultRecipient: 27684243087
-    jdbc-url: https://platform.clickatell.com/messages/http/send
+    url: https://platform.clickatell.com/messages/http/send
 
 firebase:
   accessToken: AIzaSyD9lDylJbFAjDtW0AaeGcK8Jpc2S44HY4Y
