@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    jdbc-url: ${JDBC_URL:jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb}
     url: ${JDBC_URL:jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb}
+    jdbc-url: ${spring.datasource.url}
     username: ${DATABASE_USERNAME:sa}
     password: ${DATABASE_PASSWORD:s?u!ERe3i4ok=58drAsw}
     hikari:
@@ -55,6 +55,11 @@ clickatel:
 
 firebase:
   accessToken: AIzaSyD9lDylJbFAjDtW0AaeGcK8Jpc2S44HY4Y
+
+gcp:
+  firebase:
+    service-account: 'classpath:firebase-service-account.json'
+    host: ${FIREBASE_HOST:http://localhost:9000}
 
 ftp:
   baseDir: /upload/

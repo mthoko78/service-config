@@ -37,9 +37,6 @@ spring:
             enable: true
         debug: false
 
-
-PORT: 8084
-
 management:
   endpoint:
     loggers:

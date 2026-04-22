@@ -1,3 +1,4 @@
+SERVICE_BASE_URL: https://mthoko.herokuapp.com/
 JDBC_URL: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78;encrypt=true;trustServerCertificate=true
 DATABASE_USERNAME: mhlangamthoko_SQLLogin_1
 DATABASE_PASSWORD: l15j9v8w5u

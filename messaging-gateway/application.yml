@@ -15,12 +15,6 @@ spring:
 sms:
   verificationPhrase: <#> Your verification code is
 
-learners:
-  api:
-    url: https://learners-drivers-api.herokuapp.com/
-
-PORT: 5000
 JDBC_URL: jdbc:sqlserver://mthoko78.mssql.somee.com;database=mthoko78;encrypt=true;trustServerCertificate=true
 DATABASE_USERNAME: mhlangamthoko_SQLLogin_1
 DATABASE_PASSWORD: l15j9v8w5u
-SERVICE_BASE_URL: http://localhost:${PORT}

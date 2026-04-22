@@ -1,0 +1,11 @@
+learners:
+  api:
+    url: http://localhost:8085
+
+ftp:
+  host: localhost
+  port: 2222
+  username: user
+  password: password
+
+SERVICE_BASE_URL: http://localhost:${PORT}/

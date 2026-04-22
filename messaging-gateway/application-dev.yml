@@ -1,7 +1,1 @@
-PORT: 5000
-
-ftp:
-  host: localhost
-  port: 2222
-  username: user
-  password: password
+PORT: 8085

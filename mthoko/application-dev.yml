@@ -1,3 +1,5 @@
-spring:
-  jpa:
-    show-sql: false
+PORT: 8080
+
+sms:
+  gateway:
+    url: http://localhost:8085

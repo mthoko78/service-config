@@ -1,9 +1,2 @@
 PORT: 8082
-
-ftp:
-  host: server13.ftpgrid.com
-  port: 22
-  username: ZSJ.wa9mjg81
-  password: Zw?(k*0!vWDa{mL58>v)7*EFa_)e>35E
-
 SERVICE_BASE_URL: https://all-apps-gateway.herokuapp.com/

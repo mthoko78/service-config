@@ -1,0 +1,11 @@
+learners:
+  api:
+    url: http://messaging-gateway:8085
+
+ftp:
+  host: ftp-server
+
+JDBC_URL: jdbc:sqlserver://database:1433;encrypt=true;trustServerCertificate=true;database=tempdb
+SPRING_BOOT_ADMIN_URL: http://spring-boot-admin:8084
+FIREBASE_HOST: http://firebase:9000
+SERVICE_BASE_URL: http://${spring.application.name}:${PORT}
