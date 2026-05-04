@@ -1,3 +1,0 @@
-sms:
-  gateway:
-    url: http://messaging-gateway:8085

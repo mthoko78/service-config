@@ -1,12 +1,13 @@
-FIREBASE_HOST: https://d944-41-25-43-86.ngrok-free.app
-SPRING_BOOT_ADMIN_URL: https://cbf5-41-25-43-86.ngrok-free.app
-
+FIREBASE_HOST: https://3927-102-252-32-9.ngrok-free.app
+SPRING_BOOT_ADMIN_URL: https://ac8b-102-251-32-19.ngrok-free.app
 ftp:
   host: server13.ftpgrid.com
   port: 22
   username: ZSJ.wa9mjg81
-  password: Zw?(k*0!vWDa{mL58>v)7*EFa_)e>35E
-
+  password: "Zw?(k*0!vWDa{mL58>v)7*EFa_)e>35E"
 learners:
   api:
     url: https://all-apps-gateway.herokuapp.com/
+sms:
+  gateway:
+    url: https://all-apps-gateway.herokuapp.com

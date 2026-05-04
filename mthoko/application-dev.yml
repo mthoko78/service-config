@@ -1,5 +1,0 @@
-PORT: 8080
-
-sms:
-  gateway:
-    url: http://localhost:8085

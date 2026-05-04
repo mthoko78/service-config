@@ -4,17 +4,4 @@ cors:
     methods: '*'
     headers: '*'
 
-geo:
-  api:
-    url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
-    key: YVT9TNokVXCI5A7TaC88zcTYEzwLVz5A
-    includeRoadMetadata: true
-    includeNearestIntersection: true
-
-sms:
-  apiKey: 4f5b7d6e
-  apiSecret: UWeZlAcFoJYNE5FJ
-  defaultRecipient: 27684243087
-  verificationPhrase: <#> Your verification code is
-  gateway:
-    url: https://all-apps-gateway.herokuapp.com
+PORT: 8084

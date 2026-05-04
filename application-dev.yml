@@ -1,11 +1,20 @@
 learners:
   api:
-    url: http://localhost:8085
+    url: http://messaging-gateway:8083
+
+sms:
+  gateway:
+    url: http://messaging-gateway:8083
 
 ftp:
-  host: localhost
+  host: ftp-server
   port: 2222
   username: user
   password: password
 
-SERVICE_BASE_URL: http://localhost:${PORT}/
+JDBC_URL: jdbc:sqlserver://database:1433;encrypt=true;trustServerCertificate=true;database=tempdb
+DATABASE_USERNAME: sa
+DATABASE_PASSWORD: s?u!ERe3i4ok=58drAsw
+SPRING_BOOT_ADMIN_URL: http://spring-boot-admin:8082
+FIREBASE_HOST: http://firebase:9000
+SERVICE_BASE_URL: http://${spring.application.name}:${PORT}

@@ -25,12 +25,35 @@ spring:
       client:
         username: ${SPRING_BOOT_ADMIN_USERNAME:admin}
         password: ${SPRING_BOOT_ADMIN_PASSWORD:password}
-        url: ${SPRING_BOOT_ADMIN_URL:http://localhost:8084}
+        url: ${SPRING_BOOT_ADMIN_URL:http://localhost:8082}
         instance:
-          service-base-url: ${SERVICE_BASE_URL}
+          service-url: ${SERVICE_BASE_URL}/
+          base-service-url: ${SERVICE_BASE_URL}/
+          management-url: ${SERVICE_BASE_URL}/actuator
+          health-url: ${SERVICE_BASE_URL}/actuator/health
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: cbac4c@gmail.com
+    password: 'tzfm mjea mbgk maoh'
+    from-address: mthoko78@gmail.com
+    smtp:
+      auth: true
+      timeout: 5000
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+        debug: false
 
 management:
   endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
     env:
       show-values: always
   endpoints:
@@ -64,3 +87,19 @@ gcp:
 ftp:
   baseDir: /upload/
   documents: documents
+
+geo:
+  api:
+    url: http://mapquestapi.com?key=${geo.api.key}&includeRoadMetadata=${geo.api.includeRoadMetadata}&includeNearestIntersection=${geo.api.includeNearestIntersection}
+    key: YVT9TNokVXCI5A7TaC88zcTYEzwLVz5A
+    includeRoadMetadata: true
+    includeNearestIntersection: true
+
+sms:
+  apiKey: 4f5b7d6e
+  apiSecret: UWeZlAcFoJYNE5FJ
+  defaultRecipient: 27684243087
+  verificationPhrase: <#> Your verification code is
+
+ngrok:
+  version: "2"

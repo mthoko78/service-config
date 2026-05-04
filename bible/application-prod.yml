@@ -9,4 +9,4 @@ spring:
 
 JDBC_URL: jdbc:h2:file:./src/main/resources/bible;MODE=MSSQLServer;DB_CLOSE_ON_EXIT=FALSE;TRACE_LEVEL_FILE=0
 DATABASE_PASSWORD:
-SERVICE_BASE_URL: https://bible-core.herokuapp.com/
+SERVICE_BASE_URL: https://bible-core.herokuapp.com

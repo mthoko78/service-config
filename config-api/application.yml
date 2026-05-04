@@ -1,0 +1,10 @@
+config:
+  base-path: "C:/Users/C874839/IdeaProjects/upskilling/service-config"
+  config-server-path: "C:/Users/C874839/IdeaProjects/upskilling/config-server/src/main/resources"
+ngrok:
+  spring-boot-admin:
+    auth: "Bearer 3COS0DVFoZTh2Xp5JrtClLiVytv_2o2aRNd7zTQizNPwAVeqb"
+  firebase:
+    auth: "Bearer 3DLPrepYGJ943xfVZsmvr9HYvLW_3i6nWpgT4bM3xEZYs4nx3"
+
+PORT: 8087
