@@ -1,6 +1,6 @@
 config:
-  base-path: "C:/Users/C874839/IdeaProjects/upskilling/service-config"
-  config-server-path: "C:/Users/C874839/IdeaProjects/upskilling/config-server/src/main/resources"
+  base-path: "~/IdeaProjects/service-config"
+  config-server-path: "~/IdeaProjects/config-server/src/main/resources"
 ngrok:
   spring-boot-admin:
     auth: "Bearer 3COS0DVFoZTh2Xp5JrtClLiVytv_2o2aRNd7zTQizNPwAVeqb"
