@@ -1,10 +1,10 @@
 learners:
   api:
-    url: http://localhost:8083
+    url: http://localhost:9083
 
 sms:
   gateway:
-    url: http://localhost:8083
+    url: http://localhost:9083
 
 ftp:
   host: localhost
