@@ -1,5 +1,5 @@
-FIREBASE_HOST: https://3927-102-252-32-9.ngrok-free.app
-SPRING_BOOT_ADMIN_URL: https://ac8b-102-251-32-19.ngrok-free.app
+FIREBASE_HOST: https://c7d2-105-246-242-152.ngrok-free.app
+SPRING_BOOT_ADMIN_URL: https://75fb-105-246-242-152.ngrok-free.app
 ftp:
   host: server13.ftpgrid.com
   port: 22

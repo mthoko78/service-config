@@ -1,6 +1,6 @@
 config:
-  base-path: "~/IdeaProjects/service-config"
-  config-server-path: "~/IdeaProjects/config-server/src/main/resources"
+  base-path: "/home/mthoko/IdeaProjects/service-config"
+  config-server-path: "/home/mthoko/IdeaProjects/config-server/src/main/resources"
 ngrok:
   spring-boot-admin:
     auth: "Bearer 3COS0DVFoZTh2Xp5JrtClLiVytv_2o2aRNd7zTQizNPwAVeqb"
