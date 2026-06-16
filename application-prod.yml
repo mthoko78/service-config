@@ -3,8 +3,8 @@ SPRING_BOOT_ADMIN_URL: https://22ee-41-25-43-82.ngrok-free.app
 ftp:
   host: server13.ftpgrid.com
   port: 22
-  username: ZSJ.wa9mjg81
-  password: "Zw?(k*0!vWDa{mL58>v)7*EFa_)e>35E"
+  username: T4X.kp1h4edh
+  password: "o3LfL7XJmNB9!8By^$5f2@DkF6<Q5)0E"
 learners:
   api:
     url: https://all-apps-gateway.herokuapp.com/
