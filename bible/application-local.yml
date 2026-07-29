@@ -14,4 +14,3 @@ spring:
       ddl-auto: update
 
 PORT: 9085
-DATABASE_PASSWORD: AVNS_X1TOnuPaZlWwjkcYSit
