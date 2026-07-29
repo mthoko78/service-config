@@ -1,1 +1,17 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-mthoko-mthoko78-cc36.l.aivencloud.com:19415/defaultdb
+    jdbc-url: jdbc:mysql://mysql-mthoko-mthoko78-cc36.l.aivencloud.com:19415/defaultdb
+    username: avnadmin
+    hikari:
+      connection-timeout: 300000
+      minimum-idle: 25
+      maximum-pool-size: 25
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
 PORT: 9085
+DATABASE_PASSWORD: AVNS_X1TOnuPaZlWwjkcYSit
