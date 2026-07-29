@@ -1,4 +1,4 @@
-FIREBASE_HOST: https://1367-41-10-88-40.ngrok-free.app
+FIREBASE_HOST: https://device-monitor-1579861656148.firebaseio.com
 SPRING_BOOT_ADMIN_URL: https://22ee-41-25-43-82.ngrok-free.app
 ftp:
   host: server13.ftpgrid.com
