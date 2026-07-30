@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb
+    url: jdbc:sqlserver://0.tcp.in.ngrok.io:14205;encrypt=true;trustServerCertificate=true;database=tempdb
     username: ${DATABASE_USERNAME:sa}
     password: "s?u!ERe3i4ok=58drAsw"
     hikari:
