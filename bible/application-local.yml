@@ -1,9 +1,10 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql-mthoko-mthoko78-cc36.l.aivencloud.com:19415/defaultdb
-    jdbc-url: jdbc:mysql://mysql-mthoko-mthoko78-cc36.l.aivencloud.com:19415/defaultdb
-    username: avnadmin
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;database=tempdb
+    jdbc-url: ${spring.datasource.url}
+    username: ${DATABASE_USERNAME:sa}
+    password: s?u!ERe3i4ok=58drAsw
     hikari:
       connection-timeout: 300000
       minimum-idle: 25
